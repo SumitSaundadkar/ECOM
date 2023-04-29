@@ -1,0 +1,150 @@
+* {
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 15vh;
+  background-color: gray;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  display: inline;
+  margin: 30px;
+  font-family: cursive;
+  cursor: pointer;
+}
+.body {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  background-color: #d4dee9;
+}
+.sidebar {
+  display: flex;
+  height: max-content;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: dodgerblue;
+}
+
+.category {
+  display: inline;
+  margin: 10px;
+  padding: 10px;
+}
+
+.cat_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 5vh;
+  margin: 15px;
+}
+
+.cat_item,
+input {
+  margin: 5px;
+}
+
+/* Style the product container */
+
+/* Style the product data */
+.prod_count {
+  position: absolute;
+  font-size: 20px;
+  font-weight: 600;
+}
+.prod_data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  height: 400px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Style the product image */
+.prod_data img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+/* Style the product title */
+.prod_data h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Style the product rating */
+.prod_data .rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.prod_data .rating span {
+  margin-right: 5px;
+  font-size: 1.2rem;
+}
+
+.prod_data .rating i {
+  color: orange;
+}
+
+/* Style the add to cart button */
+.prod_data button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.prod_data button:hover {
+  background-color: #0056b3;
+}
+.prod_conatainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: whitesmoke;
+  position: absolute;
+  border-radius: 50%;
+  top: 30px;
+}
+.cart_num {
+  margin-left: 5px;
+}
